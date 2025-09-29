@@ -1,0 +1,250 @@
+/* Global Styles */
+
+
+body {
+    background: white;
+    color: #0066cc; 
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 40px;
+    line-height: 2;
+}
+
+
+nav {
+    margin-bottom: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid #5012e2;
+}
+
+nav a {
+    color: #0963e9;
+    text-decoration: navy;
+    margin-right: 120px;
+    margin-left: 5cm;
+    font-weight: bold;
+}
+
+
+nav a.active {
+    text-decoration: underline;
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #003366; 
+    font-size: x-large;
+    padding-left: 7cm;
+}
+
+h2 { color: #003366;
+font-size: x-large;
+padding-left: 8cm;}
+
+h3 { color: #003366;
+font-size: x-large;
+padding-left: 8cm; }
+
+ul {
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 100cm;
+}
+
+input, textarea, button {
+    padding: 8px;
+    border: 1px solid #0066cc;
+    border-radius: 4cm;
+}
+
+button {
+    background: #e00707;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004d99;
+}
+
+           Bespoke Design
+
+.creative-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+.creative-point {
+  text-align: center;
+  padding: 100px;
+  border-radius: 8px;
+  background: #fdfdfd;
+}
+.icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h4 { font-size: large;}
+.styled-arrows {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Existing styles */
+.creative-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.creative-point {
+  text-align: center;
+  padding: 25px;
+  position: relative;
+}
+
+/* New border style - won't interfere with container */
+.bordered-feature {
+  border: 2px solid #0066cc;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 0 5px #f8faff; /* Creates outer glow effect */
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.bordered-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 102, 204, 0.2);
+}
+
+/* Keeps icon positioned correctly */
+.bordered-feature .icon {
+  position: relative;
+  top: -40px; /* Pulls icon above border */
+  background: white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 2px solid #0066cc;
+  margin: -40px auto 15px;
+  font-size: 1.5rem;
+}
+
+            WORK WITH US 
+.styled-arrows li::before {
+  content: "→";
+  color: #2a5a78;
+  margin-right: 10px;
+}
+.cta-creative {
+  background: rgb(230, 223, 223);
+  color: #2a5a78;
+  border: 2px solid #2a5a78;
+}
+
+          ABOUT MRWEBSA
+
+.animated-check-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: #0066cc;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.check-icon:hover {
+  transform: scale(1.2);
+  background: #004d99;
+}
+
+/* Container Styles */
+.about-container {
+  border: 2px solid #0066cc;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.brand {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+
+.about-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-weight: bold;
+  color: #e00a0a;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* List Styles */
+.standard-list {
+  margin: 15px 0 15px 20px;
+  padding-left: 15px;
+}
+
+.standard-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.checkmark-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.checkmark-list li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.check-icon {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background: #28a745;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
